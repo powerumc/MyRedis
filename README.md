@@ -1,3 +1,45 @@
+# MyRedis
+
+MyRedis supports mysql and etc...
+
+
+## 1. Setup Database
+
+### Setup Database
+```
+> SET db.host "localhost"
+> SET db.user "root"
+> SET db.passwd "!@#$%"
+> SET db.db "doupang"
+```
+
+
+## 2. Execute Query
+
+### Setup Query
+```
+> SET q1 "SELECT * FROM temp_table"
+```
+
+### Execute Query
+```
+> MYSQLQ db q1
+1) "1"
+2) "Junil Um"
+3) "25"
+4) "2"
+5) "Coupang"
+6) "3"
+7) "3"
+8) "POWERUMC"
+9) "35"
+```
+
+
+
+
+# This is original readme of redis
+
 Where to find complete Redis documentation?
 -------------------------------------------
 
