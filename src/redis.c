@@ -30,6 +30,7 @@
 #include "redis.h"
 #include "slowlog.h"
 #include "bio.h"
+#include "myredis_mysql.h"
 
 #include <time.h>
 #include <signal.h>
@@ -267,7 +268,8 @@ struct redisCommand redisCommandTable[] = {
     {"pfadd",pfaddCommand,-2,"wm",0,NULL,1,1,1,0,0},
     {"pfcount",pfcountCommand,-2,"w",0,NULL,1,1,1,0,0},
     {"pfmerge",pfmergeCommand,-2,"wm",0,NULL,1,-1,1,0,0},
-    {"pfdebug",pfdebugCommand,-3,"w",0,NULL,0,0,0,0,0}
+    {"pfdebug",pfdebugCommand,-3,"w",0,NULL,0,0,0,0,0},
+    {"mysqlq",mysqlqCommand,-3,"rw",0,noPreloadGetKeys,1,1,1,0,0},
 };
 
 /*============================ Utility functions ============================ */

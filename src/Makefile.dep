@@ -117,3 +117,4 @@ ziplist.o: ziplist.c zmalloc.h util.h sds.h ziplist.h endianconv.h \
   config.h redisassert.h
 zipmap.o: zipmap.c zmalloc.h endianconv.h config.h
 zmalloc.o: zmalloc.c config.h zmalloc.h
+myredis_mysql.o: ../deps/mysql/include/mysql.h myredis_mysql.h myredis_mysql.c
